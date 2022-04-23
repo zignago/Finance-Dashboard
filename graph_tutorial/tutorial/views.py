@@ -8,8 +8,9 @@ import plotly.graph_objects as go
 
 def index(request):
 
-    msft = yf.Ticker("MSFT")
-    df = msft.history(period="1y")
+    symbol = "PLTR"
+    ticker = yf.Ticker(symbol)
+    df = ticker.history(period="1y")
 
     df = df.reset_index()
 
@@ -29,4 +30,4 @@ def index(request):
     # needing to be opened
     plot_div = plot(plot_div1, output_type='div')
 
-    return render(request, "tutorial/index.html", context={'plot_div': plot_div})
+    return render(request, "tutorial/index.html", context={'plot_div': plot_div, 'title': symbol})
