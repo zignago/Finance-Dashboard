@@ -16,3 +16,14 @@ body {
     padding-top: 4px;
     padding-bottom: 4px;
   }
+
+form {
+  margin-left: 50px;
+}
+
+h1 {
+  color: navy;
+  margin-left: 50px;
+  font-size: 2.5rem;
+  font-family: Arial,"Apple Color Emoji";
+}
