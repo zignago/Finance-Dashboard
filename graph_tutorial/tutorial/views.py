@@ -3,7 +3,8 @@ from plotly.offline import plot
 from plotly.graph_objs import Scatter
 
 import yfinance as yf
-from datetime import datetime
+from datetime import date
+from dateutil.relativedelta import relativedelta
 import plotly.graph_objects as go
 
 #def index(request):
@@ -47,7 +48,10 @@ def index(request):
             plot_div = plot(plot_div1, output_type='div')
 
             # Sends info to templates/tutorial/index.html
-            return render(request, "tutorial/index.html", context={'plot_div': plot_div, 'symbol': symbol})
+            return render(request, "tutorial/index.html", 
+                        context={'plot_div': plot_div, 
+                        'symbol': symbol, 
+                        'today_date': date.today().strftime("%m/%d/%Y"),})
         except:
             return HttpResponse("no such user")  
     else:

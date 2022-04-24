@@ -17,9 +17,21 @@ body {
     padding-bottom: 4px;
   }
 
-form {
+#ticker_box {
+  float: left;
   margin-left: 50px;
   margin-bottom: 25px;
+}
+
+#button_1 {
+  float: left;
+  margin-left: 20px;
+  margin-top: 3px;
+  margin-bottom: 25px;
+  font-family: "Untitled-Regular", Helvetica neue, Arial, sans-serif;
+  border: none;
+  background-color: Transparent;
+  color:#494949;
 }
 
 h1 {
