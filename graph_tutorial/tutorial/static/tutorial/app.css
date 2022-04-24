@@ -1,5 +1,5 @@
 body {
-    padding-top: 4.5rem;
+    padding-top: 4rem;
   }
   
   .alert-pre {
@@ -19,11 +19,34 @@ body {
 
 form {
   margin-left: 50px;
+  margin-bottom: 25px;
 }
 
 h1 {
-  color: navy;
+  /*color: navy;
   margin-left: 50px;
   font-size: 2.5rem;
-  font-family: Arial,"Apple Color Emoji";
+  font-family: Arial,"Apple Color Emoji";*/
+
+  font-size: 45px;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "Untitled-Regular", Helvetica neue, Arial, sans-serif;
+  letter-spacing: 0.5px;
+  margin-left: 50px;
+  margin-bottom: -7px;
+}
+h2 {
+  /*color: navy;
+  margin-left: 50px;
+  font-size: 2.5rem;
+  font-family: Arial,"Apple Color Emoji";*/
+
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Untitled-Regular", Helvetica neue, Arial, sans-serif;
+  letter-spacing: 0.5px;
+  margin-left: 50px;
+  color:#545454;
 }

@@ -18,7 +18,8 @@
       <input type="text" name="textfield" placeholder="Enter ticker symbol">
     </form>
 
-    <h1 style="text-transform:uppercase;">{{ symbol }}</h1> 
+    <h1 style="text-transform:uppercase;">{{ symbol }}</h1>
+    <h2>Price History 4/23/2021-4/23/2022</h2>
     {% autoescape off %}
     {{ plot_div }}
     {% endautoescape %}

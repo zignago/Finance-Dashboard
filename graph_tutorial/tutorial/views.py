@@ -18,6 +18,13 @@ def index(request):
 
             # Gathering data on given symbol from yfinance
             ticker = yf.Ticker(symbol)
+
+            info = None
+            try:
+                info = ticker.info
+            except:
+                return HttpResponse("no such ticker")  
+
             df = ticker.history(period="1y")
 
             # Converts yf data from dictionary into dataframe
