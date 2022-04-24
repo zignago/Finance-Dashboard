@@ -6,10 +6,10 @@ import yfinance as yf
 from datetime import datetime
 import plotly.graph_objects as go
 
-def index(request):
-    return render(request, 'tutorial/index0.html')
+#def index(request):
+#    return render(request, 'tutorial/index0.html')
 
-def graph(request):
+def index(request):
     if request.method == 'POST':
         graph_id = request.POST.get('textfield', None)
         try:
