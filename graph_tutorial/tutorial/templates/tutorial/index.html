@@ -12,10 +12,12 @@
     <link rel="stylesheet" href="{% static 'tutorial/app.css' %}">
   </head>
   <body>
-
     <form method="POST" action="">
       {% csrf_token %}
       <input type="text" name="textfield" id="ticker_box" placeholder="Enter ticker symbol">
+    </form>
+    <form method="POST" action="">
+      {% csrf_token %}
       <button type="submit" name="textfield" id="button_1" value="FB">FB</button>
       <button type="submit" name="textfield" id="button_1" value="AAPL">AAPL</button>
       <button type="submit" name="textfield" id="button_1" value="AMZN">AMZN</button>
@@ -23,10 +25,7 @@
       <button type="submit" name="textfield" id="button_1" value="GOOG">GOOG</button>
       <button type="submit" name="textfield" id="button_1" value="TSLA">TSLA</button>
     </form>
-
-    <br>
-    <br>
-    <br>
+    <br><br><br>
     <h1 style="text-transform:uppercase;">{{ symbol }}</h1>
     <h2>Price History 4/23/2021-{{ today_date }}</h2>
     {% autoescape off %}
