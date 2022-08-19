@@ -1,4 +1,10 @@
 # CS3530-UNIX-Project
 Final project for CMP_SC 3530
 
-![Dashboard Graphic](/assets/webpage.png?raw=true "Dashboard Graphic")
+---
+<div align="center">
+    <p>
+        <img src="/assets/webpage.png" alt="Dashboard Graphic" title="Dashboard Graphic title">
+    </p>
+</div>
+---
